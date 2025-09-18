@@ -48,7 +48,7 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-3 d-none">
                                 <label for="email" class="form-label h5 fw-bold">{{ __('Telefone') }}</label>
                                 <input type="tel"
                                        class="form-control @error('email') is-invalid @enderror"
