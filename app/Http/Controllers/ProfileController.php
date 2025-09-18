@@ -17,12 +17,16 @@ class ProfileController extends Controller
     {
         $user = auth()->user();
 
+
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'telephone' => 'string',
+            'telephone' => 'string|nullable',
             'password' => 'nullable|min:8|confirmed',
         ]);
+
+
 
         $telefone = $validated['telephone'];
         $telefoneFormatado = preg_replace('/\D/', '', $telefone); // Remove tudo que não for número
