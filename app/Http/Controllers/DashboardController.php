@@ -26,8 +26,8 @@ class DashboardController extends Controller
             'aux_0_4'     => 'Aux. 0-4 anos',
             'prof_5_8'    => 'Prof. 5-8 anos',
             'aux_5_8'     => 'Aux. 5-8 anos',
-            'prof_junior' => 'Prof. Junior',
-            'aux_junior'  => 'Aux. Junior'
+            'prof_junior' => 'Prof. Juniores',
+            'aux_junior'  => 'Aux. Juniores'
         ];
 
         return view('dashboard', compact('groupedSchedules', 'canManageSchedules', 'positions', 'user'));

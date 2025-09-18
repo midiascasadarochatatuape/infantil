@@ -34,8 +34,8 @@ class ScheduleController extends Controller
             'aux_0_4'     => 'Aux. 0-4 anos',
             'prof_5_8'    => 'Prof. 5-8 anos',
             'aux_5_8'     => 'Aux. 5-8 anos',
-            'prof_junior' => 'Prof. Junior',
-            'aux_junior'  => 'Aux. Junior'
+            'prof_junior' => 'Prof. Juniores',
+            'aux_junior'  => 'Aux. Juniores'
         ];
 
         return view('schedules.index', compact('groupedSchedules', 'canManageSchedules', 'positions', 'user'));
@@ -48,8 +48,8 @@ class ScheduleController extends Controller
             'aux_0_4'     => 'Aux. 0-4 anos',
             'prof_5_8'    => 'Prof. 5-8 anos',
             'aux_5_8'     => 'Aux. 5-8 anos',
-            'prof_junior' => 'Prof. Junior',
-            'aux_junior'  => 'Aux. Junior'
+            'prof_junior' => 'Prof. Juniores',
+            'aux_junior'  => 'Aux. Juniores'
         ];
 
         return view('schedules.create', compact('positions'));
@@ -156,8 +156,8 @@ class ScheduleController extends Controller
             'aux_0_4'     => 'Aux. 0-4 anos',
             'prof_5_8'    => 'Prof. 5-8 anos',
             'aux_5_8'     => 'Aux. 5-8 anos',
-            'prof_junior' => 'Prof. Junior',
-            'aux_junior'  => 'Aux. Junior'
+            'prof_junior' => 'Prof. Juniores',
+            'aux_junior'  => 'Aux. Juniores'
         ];
 
         $users = User::where(function($query) use ($schedule) {
@@ -235,8 +235,8 @@ class ScheduleController extends Controller
             'aux_0_4'     => 'Aux. 0-4 anos',
             'prof_5_8'    => 'Prof. 5-8 anos',
             'aux_5_8'     => 'Aux. 5-8 anos',
-            'prof_junior' => 'Prof. Junior',
-            'aux_junior'  => 'Aux. Junior'
+            'prof_junior' => 'Prof. Juniores',
+            'aux_junior'  => 'Aux. Juniores'
         ];
 
         $schedules = Schedule::where('schedule_date', $date)
